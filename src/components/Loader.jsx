@@ -4,14 +4,7 @@ import "../styles/loaders.css";
 const Loader = () => {
   return (
     <Html>
-      <div class="🤚">
-        <div class="👉"></div>
-        <div class="👉"></div>
-        <div class="👉"></div>
-        <div class="👉"></div>
-        <div class="🌴"></div>
-        <div class="👍"></div>
-      </div>
+      <div class="loader"></div>
     </Html>
   );
 };
