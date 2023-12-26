@@ -11,7 +11,7 @@ const About = () => {
     <section className="max-container">
       <h1 className="head-text">
         Hello, I'm{" "}
-        <span className="blue-gradiend_text font-semibold drop-shadow">
+        <span className="blue-gradient_text font-semibold drop-shadow">
           Fajri
         </span>
       </h1>

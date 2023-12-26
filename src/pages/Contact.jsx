@@ -70,7 +70,7 @@ const Contact = () => {
   const handleBlur = () => setCurrentAnimation("idle");
 
   return (
-    <section className="relative flex lg:flex-row flex-col max-container">
+    <section className="relative flex lg:flex-row flex-col max-container h-[100vh]">
       <SnackbarProvider />
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Get in Touch</h1>
@@ -98,7 +98,7 @@ const Contact = () => {
             Email
             <input
               id="email"
-              type="text"
+              type="email"
               name="email"
               className="input"
               placeholder="john@gmail.com"
