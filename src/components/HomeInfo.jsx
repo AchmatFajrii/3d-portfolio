@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { arrow } from "../assets/icons";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const InfoBox = ({ text, link, btnText }) => (
-  <div className="info-box">
+  <div data-aos="fade-up" className="info-box ">
     <p className="font-medium sm:text-xl text-center">{text}</p>
     <Link to={link} className="neo-brutalism-white neo-btn">
       {btnText}
@@ -14,9 +17,12 @@ const InfoBox = ({ text, link, btnText }) => (
 const renderContent = {
   1: (
     <>
-      <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
+      <h1
+        data-aos="fade-up"
+        className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5 "
+      >
         Hi, I am <span className="font-semibold">Fajri</span>👋
-        <br />A Front End Developer from Indonesia
+        <br />A Front End Web Developer from Indonesia
       </h1>
     </>
   ),
@@ -32,7 +38,7 @@ const renderContent = {
   3: (
     <>
       <InfoBox
-        text="Led multiple projects to success over the years. Curious about the impact?"
+        text="Creativity in Mind, Skills in Action: Explore My Portfolio!"
         link="/projects"
         btnText="Visit my portfolio"
       />
@@ -50,6 +56,11 @@ const renderContent = {
 };
 
 const HomeInfo = ({ currentStage }) => {
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  }, []);
+
   return renderContent[currentStage] || null;
 };
 

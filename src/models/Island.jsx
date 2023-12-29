@@ -53,7 +53,7 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
 
       lastX.current = clientX;
 
-      rotationSpeed.current = delta * 0.01 * Math.PI;
+      rotationSpeed.current = delta * 0.005 * Math.PI;
     }
   };
 
@@ -89,17 +89,19 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
       const normalizedRotation =
         ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
 
+      console.log("rrrtt", normalizedRotation);
+
       switch (true) {
-        case normalizedRotation >= 5.45 && normalizedRotation <= 5.85:
+        case normalizedRotation >= 5.2 && normalizedRotation <= 6:
           setCurrentStage(4);
           break;
-        case normalizedRotation >= 0.85 && normalizedRotation <= 1.3:
+        case normalizedRotation >= 0.3 && normalizedRotation <= 1.5:
           setCurrentStage(3);
           break;
-        case normalizedRotation >= 2.4 && normalizedRotation <= 2.6:
+        case normalizedRotation >= 2.1 && normalizedRotation <= 3.3:
           setCurrentStage(2);
           break;
-        case normalizedRotation >= 4.25 && normalizedRotation <= 4.75:
+        case normalizedRotation >= 3.8 && normalizedRotation <= 4.7:
           setCurrentStage(1);
           break;
         default:

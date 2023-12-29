@@ -1,4 +1,12 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import {
+  meta,
+  shopify,
+  starbucks,
+  tesla,
+  rsud,
+  konekseed,
+  arkatama,
+} from "../assets/images";
 import {
   car,
   contact,
@@ -28,16 +36,6 @@ import {
 
 export const skills = [
   {
-    imageUrl: css,
-    name: "CSS",
-    type: "Frontend",
-  },
-  {
-    imageUrl: express,
-    name: "Express",
-    type: "Backend",
-  },
-  {
     imageUrl: git,
     name: "Git",
     type: "Version Control",
@@ -53,28 +51,18 @@ export const skills = [
     type: "Frontend",
   },
   {
+    imageUrl: css,
+    name: "CSS",
+    type: "Frontend",
+  },
+  {
     imageUrl: javascript,
     name: "JavaScript",
     type: "Frontend",
   },
   {
-    imageUrl: mongodb,
-    name: "MongoDB",
-    type: "Database",
-  },
-  {
-    imageUrl: motion,
-    name: "Motion",
-    type: "Animation",
-  },
-  {
-    imageUrl: mui,
-    name: "Material-UI",
-    type: "Frontend",
-  },
-  {
-    imageUrl: nextjs,
-    name: "Next.js",
+    imageUrl: typescript,
+    name: "TypeScript",
     type: "Frontend",
   },
   {
@@ -82,11 +70,33 @@ export const skills = [
     name: "Node.js",
     type: "Backend",
   },
+  // {
+  //   imageUrl: express,
+  //   name: "Express",
+  //   type: "Backend",
+  // },
+
+  // {
+  //   imageUrl: mongodb,
+  //   name: "MongoDB",
+  //   type: "Database",
+  // },
+  {
+    imageUrl: motion,
+    name: "Motion",
+    type: "Animation",
+  },
   {
     imageUrl: react,
     name: "React",
     type: "Frontend",
   },
+  {
+    imageUrl: nextjs,
+    name: "Next.js",
+    type: "Frontend",
+  },
+
   {
     imageUrl: redux,
     name: "Redux",
@@ -103,63 +113,50 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: typescript,
-    name: "TypeScript",
+    imageUrl: mui,
+    name: "Material-UI",
     type: "Frontend",
   },
 ];
 
 export const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#accbe1",
-    date: "March 2020 - April 2021",
+    title: "Front End Developer",
+    company_name: "RSUD Dr. R. Soedarsono",
+    icon: rsud,
+    iconBg: "#EEC759",
+    date: "Sep 2023 - Dec 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Develop and maintain electronic medical record web applications using React.js and related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Optimizing web applications for maximum speed and scalability, especially in the context of medical records that require fast and efficient access",
+      "Develop technical solutions to unique challenges in the context of medical records, such as integration with medical devices or other systems in the hospital",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#fbc3bc",
-    date: "Jan 2021 - Feb 2022",
+    title: "Front End Developer",
+    company_name: "Konekseed",
+    icon: konekseed,
+    iconBg: "#A7D397",
+    date: "Aug 2023 - Oct 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop and implement user-facing features and web applications.",
+      "Collaborate with designers to translate UI/UX wireframes into functional code.",
+      "Collaborate with back-end developers and integrate front-end components with server-side logic.",
+      "Optimize web applications for maximum speed and scalability.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#b7e4c7",
-    date: "Jan 2022 - Jan 2023",
+    title: "Programmer",
+    company_name: "Arkatama",
+    icon: arkatama,
+    iconBg: "#FFA559",
+    date: "Aug 2022 - Dec 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#a2d2ff",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Actively participated in the development team to design, implement, and test new features.",
+      "Handled maintenance and routine updates to ensure the security and stability of the application.",
+      "Collaborated with 5 fellow interns to develop websites for digital marketing and fullstack developer training.",
+      // "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
 ];
