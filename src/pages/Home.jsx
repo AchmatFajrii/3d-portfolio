@@ -61,12 +61,12 @@ const Home = () => {
   const [planeScale, planePosition] = adjustPlanedForScreenSize();
 
   return (
-    <section className="w-full h-screen relative">
+    <section className="w-full h-[50% ] relative">
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
       <Canvas
-        className={`w-full h-[70%] bg-transparent overflow-hidden ${
+        className={`w-full  bg-transparent overflow-hidden ${
           isRotating ? "cursor-grabbing" : "cursor-grab"
         }`}
         camera={{ near: 0.1, far: 1000 }}
