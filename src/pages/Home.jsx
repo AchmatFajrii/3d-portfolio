@@ -61,7 +61,7 @@ const Home = () => {
   const [planeScale, planePosition] = adjustPlanedForScreenSize();
 
   return (
-    <section className="w-full h-[50% ] relative">
+    <section className="w-full h-screen relative overflow-hidden">
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
