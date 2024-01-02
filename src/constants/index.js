@@ -10,6 +10,7 @@ import {
 import {
   car,
   contact,
+  game,
   css,
   estate,
   express,
@@ -32,6 +33,9 @@ import {
   tailwindcss,
   threads,
   typescript,
+  emoji,
+  shopping,
+  portfolio,
 } from "../assets/icons";
 
 export const skills = [
@@ -181,51 +185,35 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: pricewise,
+    iconUrl: portfolio,
     theme: "btn-back-red",
-    name: "Amazon Price Tracker",
+    name: "Personal Web V4",
     description:
-      "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
-    link: "https://github.com/adrianhajdin/pricewise",
+      "My personal website has now reached version 4 with updated design, technology, and information about myself. Enjoy!",
+    link: "https://fajri-site-v4.vercel.app/",
   },
   {
-    iconUrl: threads,
+    iconUrl: emoji,
     theme: "btn-back-green",
-    name: "Full Stack Threads Clone",
+    name: "Emoji Searcher",
     description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: "https://github.com/adrianhajdin/threads",
+      "Developed an innovative emoji search website, integrated with an advanced API, allowing users to effortlessly find any emoji.",
+    link: "",
   },
   {
-    iconUrl: car,
+    iconUrl: game,
     theme: "btn-back-blue",
-    name: "Car Finding App",
+    name: "Vouchify App",
     description:
-      "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
-    link: "https://github.com/adrianhajdin/project_next13_car_showcase",
+      "Vouchify is an e-commerce platform specializing in the sale of digital game vouchers.",
+    link: "https://achmatfajrii.github.io/VouchifyApp/",
   },
   {
-    iconUrl: snapgram,
+    iconUrl: shopping,
     theme: "btn-back-pink",
-    name: "Full Stack Instagram Clone",
+    name: "Shopping List",
     description:
-      "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
-    link: "https://github.com/adrianhajdin/social_media_app",
-  },
-  {
-    iconUrl: estate,
-    theme: "btn-back-black",
-    name: "Real-Estate Application",
-    description:
-      "Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.",
-    link: "https://github.com/adrianhajdin/projects_realestate",
-  },
-  {
-    iconUrl: summiz,
-    theme: "btn-back-yellow",
-    name: "AI Summarizer Application",
-    description:
-      "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-    link: "https://github.com/adrianhajdin/project_ai_summarizer",
+      "Created a practical shopping list application designed to conveniently track and organize users' purchase needs.",
+    link: "https://shopping-list-bix6.vercel.app/",
   },
 ];
